@@ -1,0 +1,135 @@
+<html>
+<META name="Jordan Blocher" content="HOMEPAGE">
+<head>
+<title>HomePage</title>
+
+<link rel="stylesheet" type="text/css" href="template.css" />
+<link rel="stylesheet" type="text/css" href="title.css" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" type="text/css" href="links.css" />
+
+<script src="mainjava.js">
+</script>
+
+
+</head>
+<body>
+
+<div id="title">
+<p id="login">
+<img src="title.bmp" align= "left" height= 220>  REPOSITORY AND INFORMATION ON WICSE CODING PROJECTS 
+<br><br><br><br><br><br><br><br><br><br><br>
+</p>
+</div>
+
+
+<div id="index">
+<img src="indeximg.bmp" height="25" align="left">
+<table background="main.bmp" cellspacing="15" cellpadding="2" border= "1">
+	<tr><td><br><a href="gitaccess.html">GIT Access</a></tr></td>
+	<tr><td><a href="links.html">Links</a></tr></td>
+</table>
+</div>
+
+
+<div id="template" align="center">
+<p>
+HOW TO USE THE WICSE GIT REPOSITORY
+</p>
+<p align="left">
+<br>
+STEP 1:<br>
+	INSTALL GIT ON THE COMPUTER YOU PLAN TO USE.<br><br>
+
+	INSTALL LIBRARIES:<br><br>
+	FEDORA-<br>
+		YUM INSTALL CURL-DEVEL EXPAT-DEVEL GETTEXT-DEVEL \ OPENSSL-DEVEL ZLIB-DEVEL<br><br>
+	DEBIAN-<br>
+		APT-GET INSTALL LIBCURL4-GNUTLS-DEV LIBEXPAT1-DEV GETTEXT \ LIBZ-DEV
+<br><br>
+	INSTALL GIT:<br><br>
+	FEDORA-<br>
+		YUM INSTALL GIT-CORE<br><br>
+	DEBIAN-<br>
+		APT-GET INSTALL GIT-CORE
+<br><br>
+	MAC OR WINDOWS:<br>
+		GET THE INSTALLER FROM GOOGLE CODE, EXECUTE
+<br><br>
+STEP 2: <br>ADD USERNAME AND PASSWORD FOR GIT<br><br>
+	
+	TYPE:<br>
+
+	GIT CONFIG --GLOBAL USER.NAME "WICSE"<br>
+	GIT CONFIG --GLOBAL USER.EMAIL WICSECLUB@GMAIL.COM<br>
+<br><br>
+STEP 3:<br>
+	CREATE AN SSH KEY FOR ACCESSING THE GIT REPOSITORY<br><br>
+
+	1. TYPE SSH-KEYGEN INTO TERMINAL, THIS WILL GENERATE THE KEY<br>
+	2. SAVE THE KEY IN /HOME/'YOURUSERNAME'/.SSH/ID_RSA<br>
+	3. CHOOSE A PASSPHRASE (I DEFAULTED TO NONE)<br>
+	4. CAT ID_RSA AND COPY KEYGEN TO CLIPBOARD<br>
+<br><br>
+STEP 4:<br>
+	LOGIN TO WICSE REPOSITORY ON GITHUB.COM<br>
+
+	USERNAME: wicseclub@gmail.com<br>
+	PASSWORD: 1qawsedrf<br>
+
+STEP 5:<br>
+	ADD YOUR SSH KEY TO THE REPOSITORY<br><br>
+
+	1. GO TO ACCOUNT SETTINGS<br>
+	2. GO TO SSH PUBLIC KEYS<br>
+	3. ADD ANOTHER PUBLIC KEY, COPY, PASTE AND CALL IT YOUR NAME PLUS YOUR COMPUTER'S NAME (YOU MAY WISH TO ADD YOUR HOME COMPUTER AND THE ECC LAB)<br><br>
+	NOTE: YOUR ECC KEY WILL WORK FOR ALL ECC COMPUTERS BECAUSE IT IS LINKED TO YOUR ECC ACCOUNT<br><br>
+	<br>
+STEP 6:<br>
+	CREATE A DIRECTORY ON YOUR COMPUTER TO HOLD WICSE PROJECTS<br>
+<br>
+STEP 7:<br>
+	OPEN A TERMINAL TO THIS DIRECTORY AND TYPE:<br>
+		'GIT INIT'<br><br>
+
+	THIS WILL INITIALIZE THE DIRECTORY AS A GIT REPOSITORY<br>
+<br>
+STEP 8:<br> 
+	TYPE:<br>
+		GIT REMOTE ADD ORIGIN GIT@GITHUB.COM:WICSE/'THE NAME OF THE REPOSITORY YOU WISH TO ADD' (i.e. PUBLIC_HTML)<br><br>
+	
+	THIS CREATES A LOCAL REPOSITORY FOR YOU ON YOUR COMPUTER THAT IS LINKED TO THE WICSE REPOSITORY<br>
+
+NOW YOU CAN USE GIT CHECKOUT TO COPY THE FILES FROM THE WICSE REPOSITORY TO YOUR LOCAL REPOSITORY.<br><br>
+USE GIT ADD TO ADD FILES<br><br>
+COMMIT USING GIT COMMIT -M 'MY MESSAGE'<br><br>
+IMPORTANT! AFTER COMMITING TO THE LOCAL REPOSITORY, CHANGES MUST BE 'PUSHED' TO THE SERVER USING GIT PUSH<br><br><br>
+
+</div>
+
+<div id="template2" align="right">
+<body onUnload="winclose();">
+<br>
+<table align=center cellpadding="15" background= "main.bmp" border= 1>
+	<tr><td><a href="javascript:doNothing()">
+<img src="Alt="img"" border="0" width="123" height="123">
+</a></td>
+	<tr><td><a href="javascript:doNothing">
+<img src="Alt="img"" border="0" width="123" height="123">
+</a></tr></td>
+	<tr><td><a href="javascript:doNothing()" >
+<img src="Alt="img"" border="0" width="123" height="123">
+</a></tr></td>
+	<tr><td><a href="javascript:doNothing()" >
+<img src="Alt="img"" border="0" width="123" height="123">
+</a></tr></td>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
