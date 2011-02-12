@@ -1,0 +1,97 @@
+<html>
+<META name="Jordan Blocher" content="HOMEPAGE">
+<head>
+<title>Wicse Web Workshop</title>
+
+<!-- These links are to the css pages that decide the style of the
+ page; including the dividers.-->
+<link rel="stylesheet" type="text/css" href="template.css" />
+<link rel="stylesheet" type="text/css" href="title.css" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" type="text/css" href="links.css" />
+
+<!--This script controlls the popups.-->
+<script src="popup.js">
+</script>
+
+
+</head>
+<body>
+
+<div id="title">
+<p id="login">
+<img src="title.bmp" align= "left" height= 220>  INFORMATION ON WICSE CODING PROJECTS 
+<br><br><br><br><br><br><br><br><br><br><br>
+</p>
+</div>
+
+
+<!--The table for the index. Div floats left.-->
+<div id="index">
+<img src="indeximg.bmp" height="25" align="left">
+<table background="main.bmp" cellspacing="15" cellpadding="2" border= "1">
+	<tr><td><br><a href="index.html">HOME</a></tr></td>
+	<tr><td><a href="https://github.com/WICSE.html">GitHub Repository</a></tr></td>
+</table>
+</div>
+
+
+
+<!--Main portion of page.-->
+<div id= "template" align="center">
+<br/><br/><br/>
+
+<p id="center">
+Feel free to write me directly with any questions you may have
+
+<table background="main.bmp" align="center">
+<!-- Form links to php mail script.-->
+<tr><td></br></br></br>
+<form method="post" action="cgi-bin/mail.php">
+<!-- Form style.-->
+<table cellpadding="2" cellspacing="0" border="0" bgcolor="#000000"><tr><td>
+<font face="Times New Roman" size="2" color="#FFFFFF"></font><div style="" id="mainmsg"> </div></td></tr></table>
+<br><table cellpadding="2" cellspacing="0" border="0" bgcolor="#000000">
+<!-- Input Data: name, email and message.-->
+<tr valign="top">
+<td nowrap><font face="Times New Roman" size="2" color="#FFFFFF">Name</font></td>
+<td><input type="text" name="name" size="60"> </td></tr>
+<tr valign="top"> <td nowrap><font face="Times New Roman" size="2" color="#FFFFFF">Email Address</font></td> 
+<td><input type="text" name="email" size="40"> </td></tr>
+<tr valign="top"> <td nowrap><font face="Times New Roman" size="2" color="#FFFFFF">Subject</font></td> 
+<td><textarea name="message" cols="60" rows="10"></textarea><br> </td></tr>
+
+<tr> <td colspan="2"><table cellpadding=5 cellspacing=0 bgcolor="black" width="100%">
+
+<!-- Submit form data.-->
+<input type="submit" class="btn" value="Send" name="Submit"></td></tr>
+
+<tr><td colspan=2 align="center"><br></td></tr></table></form>
+</form></tr></td>
+</table></p>
+<!-- End table.-->
+
+</div>
+
+
+<div id="template2" align="center">
+<body onUnload="winclose();">
+<br>
+<table align=center cellpadding="15" background= "main.bmp" border= 1>
+        <tr><td><a href="javascript:doNothing()" onClick="popupHandle=popup('gitbook.jpg','512','315')">
+<img src="git.jpg" border="0" width="123" height="123">
+</a></td>
+        <tr><td><a href="javascript:doNothing()" onClick="popupHandle=popup('jsbible.jpg','512','315')">
+<img src="js.jpg" border="0" width="123" height="123">
+</a></tr></td>
+
+ </div>
+
+</body>
+<div id= "footer" align="center">
+    <a href="contact.html">- WebMaster -</a>
+</div>
+
+</html>
+
+

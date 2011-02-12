@@ -1,0 +1,49 @@
+body{
+	background-color: 006699;
+	color: white;
+	font-style: 'Times New Roman';
+}
+p#login{
+	color: white;
+	font-variant: small-caps;
+	text-align: right;	
+}	
+p#center{
+	color: white;
+	font-variant: small-caps;
+	font-size: 16;
+	text-align: center;
+}
+p#alert{
+	text-align: center;
+	color: white;
+	font-variant: small-caps;
+}
+p#namealert{
+	text-align: center;
+	color: white;
+	font-variant: small-caps;
+}
+p#passwordalert{
+	text-align: center;
+	color: white;
+	font-variant: small-caps;
+}
+p#emailalert{
+	text-align: center;
+	color: white;
+	font-variant: small-caps;
+}
+p#members{
+	text-align: center;
+	font-size: 20;
+	color: white;
+	font-variant: small-caps;
+}
+p#left{
+	text-align: left;
+	font-variant: small-caps;
+}
+a:link { color: white; font-variant: small-caps; text-decoration: none;}
+a:visited { color: gray; font-variant: small-caps; text-decoration: none;  }
+a:hover { color: white; font-variant: small-caps; text-decoration: none;}

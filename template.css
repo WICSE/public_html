@@ -1,0 +1,11 @@
+body{
+	background-color: white;
+	font-type: 'Times New Roman';
+	font-variant: none;
+	color: white;
+	text-align: center;
+}
+a:link { color: white; text-decoration: none; text-style: 'Times New Roman;}
+a:visited { color: gray; text-decoration: none;  text-style: 'Times New Roman;} 
+a:hover { color: white; text-decoration: none; text-style: 'Times New Roman;} 
+

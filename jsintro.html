@@ -1,0 +1,171 @@
+
+<html>
+<META name="Jordan Blocher" content="HOMEPAGE">
+<head>
+<title>Wicse Web Workshop</title>
+
+<!-- These links are to the css pages that decide the style of the
+ page; including the dividers. -->
+<link rel="stylesheet" type="text/css" href="template.css" />
+<link rel="stylesheet" type="text/css" href="title.css" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" type="text/css" href="links.css" />
+
+<!--This script controls user acess.-->
+<script src="login.js"></script>
+
+<!--This script controls the popups.-->
+<script src="popup.js"></script>
+
+
+
+</head>
+<body>
+
+<div id="title">
+<p id="login">
+<img src="title.bmp" align= "left" height= 220>  INFORMATION ON WICSE CODING PROJECTS 
+<br><br><br><br><br><br><br><br><br><br><br>
+</p>
+</div>
+
+
+<!-- The table for the index. Div floats left.-->
+<div id="index">
+<img src="indeximg.bmp" height="25" align="center">
+<table background="main.bmp" cellspacing="15" cellpadding="2" border= "1">
+	<tr><td><br><a href="index.html">HOME</a></tr></td>
+	<tr><td><a href="https://github.com/WICSE.html">GitHub Repository</a></tr></td>
+</table>
+</div>
+
+
+
+<div id= "template">
+
+<br/><br/><br/>
+
+
+
+<table background="main.bmp" cellspacing="15" cellpadding="2" border= "1" align="center">
+
+	<tr><td><br>INTRO TO JAVASCRIPTING</tr></td>
+<br/><br/><br/>
+<tr><td>
+JAVASCRIPTS ARE CLIENT-SIDE SCRIPTS THAT RUN BASED ON USER-INTERACTION WITH THE WEBPAGE. <br/>
+YOUR HTML FILE NEEDS TO INCLUDE THE .JS IN THE HEADER. <br/>
+ie. <br/>
+script src="gitlogin.js" /script <br/>
+ <br/>
+ <br/>
+script src="popup.js" /script <br/>
+ <br/>
+THERE ARE DIFFERENT WAYS TO RUN JAVASCRIPTS, SUCH AS: <br/>
+1. FORMS <br/>
+
+form method="post" action="cgi-bin/mail.php"<br/>
+
+input type="text" name="name" size="60"<br/>
+input type="text" name="email" size="40"<br/>
+textarea name="message" cols="60" rows="10"/textarea<br/><br/>
+
+input type="submit" class="btn" value="Send" name="Submit"<br/>
+<br/><br/>
+
+2. LINKS  <br/><br/>
+a href="javascript:doNothing()" onClick="login()">Protected Page /a<br/><br/>
+a href="javascript:doNothing()" onClick="popupHandle=popup()">Popup /a <br/><br/><br/>
+
+NOTE: onTouch() is available for touch screens.<br/><br/>
+and onMouseOver() is available for regular browsers.<br/><br/>
+	<tr><td>POPUPS
+<br/><br/>
+SAVE THIS CODE AS POPUP.JS<br/>
+var popupHandle;
+<br/>
+function popup(myPopup)<br/>
+{<br/>
+
+  // always close the old one , so only one at a time is open<br/>
+  if(popupHandle || popupHandle!=null)<br/>
+  {<br/>
+    if (!popupHandle.closed) popupHandle.close();<br/>
+  }<br/>
+  popupHandle=null;<br/>
+  <br/>
+  // open the popup<br/>
+  popupHandle = window.open( "popup.html", "myWindow", <br/>
+"height = 500, width = 500, resizable = 0" )<br/>
+  return popupHandle;<br/>
+}<br/>
+<br/>
+function winclose()<br/>
+{<br/>
+  if (window.popupHandle!=null && !window.popupHandle.closed)<br/>
+  {<br/>
+    window.popupHandle.close();<br/>
+    }<br/>
+}<br/>
+<br/>
+function doNothing(){} // does nothing but required by JavaScript in this case<br/>
+</tr></td>
+<br/><br/>
+TRY ME!<br/><br/>
+<a href="javascript:doNothing()" onClick="popupHandle=popup(1)">Popup</a>
+<br/><br/>
+	<tr><td>PASSWORDS
+<br/><br/>
+SAVE THIS CODE AS LOGIN.JS<br/>
+function login()<br/>
+{<br/>
+	var passwrd = prompt("Please enter the password", "");<br/>
+	if(passwrd == "mypassword")<br/>
+	{<br/>
+		popup();<br/>
+		window.location= "newwindow.html";<br/>
+		return true;	<br/>
+	}<br/>
+	else<br/>
+	{<br/>
+		popup(); <br/>
+			window.location= "denied.html";<br/>
+			return false;<br/>
+	}<br/>
+}<br/><br/><br/>
+</tr></td>
+
+<a href="javascript:doNothing()" onClick="login()">Protected Page</a><br/><br/>
+<a href="tictac.html">TIC TAC TOE</a>
+
+	
+</table>
+
+
+</div>
+
+<div id="template2" align="center">
+<body onUnload="winclose();">
+<br>
+<table align=center cellpadding="15" background= "main.bmp" border= 1>
+        <tr><td><a href="javascript:doNothing()" onClick="popupHandle=popup(1)">
+<img src="git.jpg" border="0" width="123" height="123">
+</a></td>
+        <tr><td><a href="javascript:doNothing()" onClick="popupHandle=popup(2)">
+<img src="js.jpg" border="0" width="123" height="123">
+</a></tr></td>
+
+ </div>
+
+</body>
+<div id= "footer" align="center">
+    <a href="contact.html">- WebMaster -</a>
+</div>
+
+
+
+
+</html>
+
+
+
+
