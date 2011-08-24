@@ -10,7 +10,6 @@ function popup(myPopup)
     if (!popupHandle.closed) popupHandle.close();
   }
   popupHandle=null;
-  
  if( myPopup == 1)
  {
   // open the popup
@@ -22,6 +21,13 @@ function popup(myPopup)
  {
   // open the popup
   popupHandle = window.open( "http://www.javascriptkit.com/jsref/", "myWindow", 
+"height = 500, width = 500, resizable = 0" )
+  return popupHandle;
+ }
+ else if (myPopup == 3)
+ {
+  // open the popup
+  popupHandle = window.open( "http://www.xkcd.com/", "myWindow",
 "height = 500, width = 500, resizable = 0" )
   return popupHandle;
  }

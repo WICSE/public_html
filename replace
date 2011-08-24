@@ -1,0 +1,8 @@
+
+
+i=0; temp=$(mktemp -p .); for file in screen*
+do
+mv "$file" $temp;
+mv $temp $(printf "screen%04d.png" $i)
+i=$((i + 1))
+done

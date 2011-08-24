@@ -1,6 +1,6 @@
 #title{
 	width: 100%;
-	height: 255px;
+	height: 120px;
 	top: 16px;
 	left: 0;
 	right: 0;
@@ -10,7 +10,7 @@
 
 #index{
 	width: 12%;
-	top: 290px;
+	top: 120px;
 	left: 0;
 	border: none;
 	height: 800px;
@@ -23,7 +23,7 @@
 	border: none;
 	left: 200px;
 	right: 0;
-	top: 290px;;
+	top: 120px;;
 	padding: 20px;
 	float: center;
 	position: absolute;
@@ -33,8 +33,8 @@
 
 #template2{
 	width: 10.2%;
-	top: 290px;
-	right: 0;
+	top: 150px;
+	right: 20px;
 	border: none;
 	height: 800px;
 	float: right;
