@@ -2,10 +2,11 @@ body{
 	background-color: white;
 	font-type: 'Times New Roman';
 	font-variant: none;
-	color: white;
+	color: black;
 	text-align: center;
+	font-size: 30;
 }
-a:link { color: white; text-decoration: none; text-style: 'Times New Roman;}
-a:visited { color: gray; text-decoration: none;  text-style: 'Times New Roman;} 
-a:hover { color: white; text-decoration: none; text-style: 'Times New Roman;} 
+a:link { color: black; text-decoration: font-size: 30; none; text-style: 'Times New Roman';}
+a:visited { color: purple; text-decoration: none; font-size:30  text-style: 'Times New Roman';} 
+a:hover { color: gray; text-decoration: none; font-size: 30; text-style: 'Times New Roman;} 
 

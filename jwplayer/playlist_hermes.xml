@@ -1,0 +1,26 @@
+
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:jwplayer="http://developer.longtailvideo.com/trac/"> 
+  <channel>
+    <title>Playlist</title> 
+    <item> 
+      <media:content url="hermes_install.flv" /> 
+        </item> 
+    <item> 
+      <media:content url="mumps_install.flv" /> 
+      
+    </item> 
+    <item>
+      <media:content url="petsc_install.flv" />
+     
+    </item>
+    <item>
+      <media:content url="trilinos_install.flv" />
+     
+    </item>
+    <item>
+      <media:content url="mumps_speedups.flv" />
+     
+    </item>
+
+  </channel> 
+</rss>

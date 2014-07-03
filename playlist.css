@@ -1,0 +1,53 @@
+object , embed{
+	float: left;
+}
+
+.jw_playlist_playlist {
+	float:left;
+	width: 280px;
+	height: 240px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	<!--[if gte IE 6]>float:right;<![endif]-->
+}
+
+.jw_playlist_image {
+	width: 75px;
+	height: auto;
+}
+
+.jw_playlist_image_div {
+	border: 1px solid #000000;
+	padding: 0 5px;
+	margin: 0 5px;
+	float:left;
+	background-color:white;
+}
+
+.jw_playlist_item {
+	padding:10px 20px;
+}
+
+.clear {
+	clear:both;
+	height: 0;
+}
+
+.jw_playlist_title {
+	font-weight: bold;
+}
+
+.jw_playlist_description {
+}
+
+.even {
+	background-color: #EEEEEE;
+}
+
+.odd {
+	background-color: #FFFFFF;
+}
+
+.playing {
+	background-color:yellow;
+}

@@ -1,22 +1,24 @@
 body{
-	background-color: 006699;
-	color: white;
+	color: black;
 	font-style: 'Times New Roman';
+	font-size: 30;
 }
 p#login{
-	color: white;
+	color: black;
+        font-size: 30;
 	font-variant: small-caps;
 	text-align: right;	
 }	
 p#center{
-	color: white;
+	color: black;
 	font-variant: small-caps;
-	font-size: 16;
+	font-size: 30;
 	text-align: center;
 }
 p#alert{
 	text-align: center;
-	color: white;
+	color: black;
+        font-size: 30;
 	font-variant: small-caps;
 }
 p#namealert{
@@ -44,6 +46,9 @@ p#left{
 	text-align: left;
 	font-variant: small-caps;
 }
-a:link { color: white; font-variant: small-caps; text-decoration: none;}
-a:visited { color: gray; font-variant: small-caps; text-decoration: none;  }
-a:hover { color: white; font-variant: small-caps; text-decoration: none;}
+a:link { color: black; font-variant: small-caps; font-size: 30;
+ text-decoration: none;}
+a:visited { color: purple; font-variant: small-caps; font-size: 30;
+ text-decoration: none;  }
+a:hover { color: gray; font-variant: small-caps; font-size: 30;
+ text-decoration: none;}
